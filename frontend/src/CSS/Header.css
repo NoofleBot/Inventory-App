@@ -1,0 +1,29 @@
+nav {
+  width: 100vw;
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  padding: 0.5rem 0rem 1.5rem;
+}
+
+.returnhome a {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.returnhome a:hover {
+  color: lightblue;
+}
+
+.loginorregister a {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+.loginorregister a:hover {
+  background-color: lightsteelblue;
+}
