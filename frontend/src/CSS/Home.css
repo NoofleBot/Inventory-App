@@ -1,0 +1,32 @@
+.createitembutton a {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: rgb(44, 82, 44);
+  color: white;
+  font-weight: bold;
+}
+
+.createitembutton a:hover {
+  background-color: rgb(83, 151, 106);
+}
+
+.viewitembutton a{
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+.viewitembutton a:hover{
+  background-color: lightsteelblue;
+}
+
+.itemcard {
+  background-color : #444444;
+  padding: 0.5rem 0 1.6rem;
+}
+
+h3, p {
+  line-height: 10px;
+}
