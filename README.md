@@ -35,9 +35,9 @@ npm install
 npx knex migrate:latest
 ```
 
-7. Startup the express API server
+7. Startup the express API server (detached from terminal)
 ```bash
-npm run express
+(npm run express&)
 ```
 
 **FRONTEND SETUP:**
