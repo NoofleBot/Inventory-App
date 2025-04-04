@@ -1,4 +1,4 @@
 :root {
-  padding-top: 106px; /* Exact size of header in pixels */
+  padding-top: 115px; /*Not really exact but it keeps the body from getting hidden by the header*/
   text-align: center;
 }
