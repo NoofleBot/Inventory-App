@@ -25,6 +25,24 @@ app.get('/items', (request, response) => {
     })
 })
 
+app.get('/items/:id', (request, response) => {
+  var { id } = request.params;
+  knex('item')
+    .where({ id })
+    .then(item => {
+        response.json(item);
+    })
+});
+
+app.get('/users', (request, response) => {
+  knex('users')
+  .select('*')
+  .then(data => {
+    var users = data.map(user => user)
+    response.json(users);
+  })
+})
+
 //POST
 app.post('/items', (request, response) => {
   var {userId, itemName, itemDescription, itemQuantity} = request.body
