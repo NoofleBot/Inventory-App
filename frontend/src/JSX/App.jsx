@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import '../CSS/App.css'
 import Home from './Home.jsx'
 import Login from './Login.jsx'
@@ -10,8 +10,8 @@ import CreateNewItem from './CreateNewItem.jsx'
 import RegisterSuccess from './RegisterSuccess.jsx'
 
 function App() {
-  var [loggedInUser, setLoggedInUser] = useState(null);
-  var [loggedInUserId, setLoggedInUserId] = useState(null);
+  var [loggedInUser, setLoggedInUser] = useState(null)
+  var [loggedInUserId, setLoggedInUserId] = useState(null)
 
   return (
     <>

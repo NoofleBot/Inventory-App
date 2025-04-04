@@ -1,13 +1,13 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'
 import '../CSS/Header.css'
 
 function Header({ loggedInUser, setLoggedInUser, setLoggedInUserId }) {
   const navigate = useNavigate()
 
   function handleLogout() {
-    setLoggedInUser(null);
-    setLoggedInUserId(null);
-    navigate('/');
+    setLoggedInUser(null)
+    setLoggedInUserId(null)
+    navigate('/')
   }
 
   return (

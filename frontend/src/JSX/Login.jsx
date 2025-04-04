@@ -1,36 +1,36 @@
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import '../CSS/Login.css';
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import '../CSS/Login.css'
 
 function Login({ setLoggedInUser, setLoggedInUserId }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [message, setMessage] = useState('');
-  const navigate = useNavigate();
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [message, setMessage] = useState('')
+  const navigate = useNavigate()
 
   const handleLogin = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
-      const response = await fetch('http://localhost:5172/users');
-      const users = await response.json();
+      const response = await fetch('http://localhost:5172/users')
+      const users = await response.json()
       const user = users.find(
         (user) => user.username === username && user.password === password
-      );
+      )
       if (user) {
-        setLoggedInUser(user.username);
-        setLoggedInUserId(user.id);
-        navigate('/');
+        setLoggedInUser(user.username)
+        setLoggedInUserId(user.id)
+        navigate('/')
       } else {
-        setMessage('Invalid username or password.');
+        setMessage('Invalid username or password.')
       }
     } catch (error) {
-      setMessage('Error connecting to the server');
+      setMessage('Error connecting to the server')
     }
-  };
+  }
 
   return (
-    <div>
+    <>
       <h1>User Login Portal:</h1>
       <form onSubmit={handleLogin}>
         <div>
@@ -42,8 +42,8 @@ function Login({ setLoggedInUser, setLoggedInUserId }) {
         <button type='submit'>Login</button>
       </form>
       <p>{message}</p>
-    </div>
-  );
+    </>
+  )
 }
 
-export default Login;
+export default Login

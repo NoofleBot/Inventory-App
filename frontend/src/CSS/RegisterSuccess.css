@@ -1,0 +1,11 @@
+.gotologin a {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+.gotologin a:hover {
+  background-color: lightsteelblue;
+}
