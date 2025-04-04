@@ -39,14 +39,14 @@ function Home({ loggedInUserId }) {
       <p><b>{message}</b></p>
       {items.map((item) => (
         <div>
-        <div key={item.id} className="itemcard">
+        <div className="itemcard">
           <h3><b>{item.item_name}</b></h3>
           <p>
           {item.description.length > 100
              ? `${item.description.slice(0, 100)}...`
              : item.description}
           </p>
-          <p>Quantity: {item.quantity}</p>
+          <p><i>Quantity:</i> {item.quantity}</p>
           <div className="viewitembutton">
             <Link to={`/item/${item.id}`}>View {item.item_name}</Link>
           </div>
