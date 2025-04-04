@@ -21,7 +21,7 @@ function App() {
         <Route path='/login' element={<Login setLoggedInUser={setLoggedInUser} setLoggedInUserId={setLoggedInUserId} />} />
         <Route path='/register' element={<Register />} />
         <Route path='/item/:id' element={<ItemDetails />} />
-        <Route path='createNewItem' element={<CreateNewItem />} />
+        <Route path='createNewItem' element={<CreateNewItem loggedInUserId={loggedInUserId} />} />
         <Route path='registerSuccess' element={<RegisterSuccess />} />
       </Routes>
     </>
